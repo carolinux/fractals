@@ -5,10 +5,6 @@ from matplotlib import pyplot as plt
 from iterative_fractal_generator import Point, Fragment, fractaliter
 
 KOCH_HEIGHT = math.sqrt((1.0/3)**2 - (1.0/6)**2)
-        
-TEST_CURVE = Fragment([Point(0,0), Point(1.0/3, 0), Point(1.0/3, 1.0/3),
-                  Point(2.0/3, 1.0/3), Point(2.0/3, 0), Point(1,0)])
-
 KOCH_CURVE = [Point(0,0), Point(1.0/3, 0), Point(0.5, KOCH_HEIGHT), Point(2.0/3,0), Point(1,0)]
 
 y = math.sqrt(6*6 + 3*3)
