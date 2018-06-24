@@ -93,23 +93,3 @@ def fractaliter(fragment, num_iter, plot_all_iterations=True):
 
     return xs, ys
 
-KOCH_HEIGHT = math.sqrt((1.0/3)**2 - (1.0/6)**2)
-        
-
-
-FRAG1 = Fragment([Point(0,0), Point(1.0/3, 0), Point(1.0/3, 1.0/3),
-                  Point(2.0/3, 1.0/3), Point(2.0/3, 0), Point(1,0)])
-
-KOCH_CURVE = Fragment([Point(0,0), Point(1.0/3, 0), Point(0.5, KOCH_HEIGHT), Point(2.0/3,0), Point(1,0)])
-print KOCH_HEIGHT
-
-xs, ys = fractaliter(KOCH_CURVE, 6)
-plt.show()
-#plt.plot(xs, ys)
-#plt.show()
-#line = [Point(1,1), Point(3,3)]
-#frag2 = frag.project_onto(*line)
-#plt.plot(*pointlist_to_mpl_args(line))
-#plt.plot(*frag.to_mpl_args())
-#plt.plot(*frag2.to_mpl_args())
-#plt.show()
